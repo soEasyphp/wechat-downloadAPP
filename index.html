@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>蝴蝶兰+</title>
+</head>
+<body style="background: rgb(1, 159, 232);">
+	<style type="text/css">
+/*	*{margin:0; padding:0;}*/
+	img{max-width: 100%; height: auto;}
+	.title{
+		 top:140px;
+		 height: 50px;
+	     max-width: 600px;
+	     font-size: 20px;
+	     text-align: center;
+	     position: relative;
+		 margin:0 auto;
+	}
+	.content{
+		top:140px;
+		font-size: 14px;
+		text-align: center;
+		position: relative;
+	}
+	a:link,a:visited{
+		 text-decoration:none;  /*超链接无下划线*/
+		}
+	.ige{
+		 top:120px;
+         max-width: 100px;
+         position: relative;
+         height: 100px;
+         margin:0 auto;
+		 text-align: center;
+	}
+	.c-title{
+		margin-top: 220px;
+		text-align: center;
+	}
+	.c-title a{
+		border: 1px solid white;
+		background: rgb(1, 159, 232);
+		text-align: center;
+		margin:0 auto;
+		color: white;
+		height:30px;
+		line-height:30px;
+		width:100px;
+		padding:10px
+	}
+	</style>
+
+	<div class="ige"><img src="./index.png" /></div>
+
+	<div class="title">蝴蝶兰+</div>
+
+	<div class="content">
+
+        <p>提供详细权威的蝴蝶兰品种信息和培养技术，<br/></p>
+		<p>以及本年度郑州地区市场的花卉种植信息，<br/></p>
+		数据由郑州市农林科学研究所提供
+	</div>
+	<div class="c-title">
+		<a style="" href="http://hudie.shenaitang.com/update/hudie.apk">点击下载</a>
+	</div>
+	<script type="text/javascript" src="http://libs.useso.com/js/jquery/1.9.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		function is_weixin() {
+		    var ua = navigator.userAgent.toLowerCase();
+		    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+		        return true;
+		    } else {
+		        return false;
+		    }
+		}
+		var isWeixin = is_weixin();
+		var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight;
+		var weixinTip = $('<div id="weixinTip"><p><img src="live_weixin.png" alt="微信打开"/></p></div>');
+		
+		if(isWeixin){
+			$("body").append(weixinTip);
+		}
+		$("#weixinTip").css({
+			"position":"fixed",
+			"left":"0",
+			"top":"0",
+			"height":winHeight,
+			"width":"100%",
+			"z-index":"1000",
+			"background-color":"rgba(0,0,0,0.8)",
+			"filter":"alpha(opacity=80)",
+		});
+		$("#weixinTip p").css({
+			"text-align":"center",
+			"margin-top":"10%",
+			"padding-left":"5%",
+			"padding-right":"5%"
+		});
+	</script>
+</body>
+</html>
